@@ -36,6 +36,8 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require("./src/theme/image.js"),
+  ],
 }
 
