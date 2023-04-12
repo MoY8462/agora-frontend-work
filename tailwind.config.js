@@ -6,17 +6,18 @@ export default {
   ],
   theme: {
     colors: {
-      'agora': {
-        'blue': '#396EB0',
-        'red': '#F86A61',
-        'gray': {
-          100: '#9BAAAA',
-          200: '#657172'
-        }
+      'blue': {
+        100: '#396EB0',
+        200: '#2B5284',
       },
-      'error': {
+      'red': {
         100: '#FED3C0',
-        200: '#B2303E',
+        200: '#F86A61',
+        300: '#B2303E',
+      },
+      'gray': {
+        100: '#9BAAAA',
+        200: '#657172'
       },
       'white': {
         'default': '#FFFFFF',
