@@ -1,18 +1,33 @@
-<script setup> 
+<script setup>
+import Button from '../base/Button.vue'
 
+defineProps({
+    url: String,
+    title: String,
+    price: Number,
+    description: String,
+    icon: String,
+    pieces: Number
+})
 </script>
 
 <template>
     <div class="card">
-        <img class="card__img" src="" alt="">
-        <section class="card__container">
-            <h3 class="card__container--title"></h3>
-            <span class="card__container--price"></span>
-            <p class="card__container--description"></p>
-            <label class="card__container--pieces">
-                <svg class="pieces--icon"></svg>
-                <span class="pieces--text"></span>
-            </label>
-        </section>
+        <img class="card__img" :src="url" alt="">
+        <div class="card__container">
+            <section class="card__container--headline">
+                <h3 class="headline--title">{{ title }}</h3>
+                <span class="headline--price">$ {{ price }}</span>
+            </section>
+            <p class="card__container--description">{{ description }}</p>
+            <section class="card__container--footer">
+                <svg class="footer--icon icon" :class="icon"></svg>
+                <span class="footer--text">Quedan {{ pieces }} piezas.</span>
+                <Button 
+                class="bg-red-200 hover:bg-red-300"
+                :icon="'icon_shopping_bag'"
+                />
+            </section>
+        </div>
     </div>
 </template>
