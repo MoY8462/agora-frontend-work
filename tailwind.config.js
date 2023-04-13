@@ -32,7 +32,9 @@ export default {
         'agora': 'url("./assets/icons/Agora.svg")',
         'agora_auth': 'url("./assets/icons/Agora-auth.svg")',
         'agora_icon': 'url("./assets/icons/Agora-icon.svg")',
+        'inbox_stack': 'url("./assets/icons/inbox-stack.svg")',
         'shopping_bag': 'url("./assets/icons/shopping-bag.svg")',
+        'shopping_bag_dark': 'url("./assets/icons/shopping-bag-dark.svg")',
         'user': 'url("./assets/icons/user.svg")',
       },
     },
@@ -41,6 +43,8 @@ export default {
     require("./src/theme/base.js"),
     require("./src/theme/image.js"),
     require("./src/theme/components/card.js"),
+    require("./src/theme/components/input.js"),
+    require("./src/theme/components/navbar.js"),
     require("./src/theme/views/home.js"),
   ],
 }

@@ -14,7 +14,7 @@ defineProps({
 <template>
     <div class="card">
         <img class="card__img" :src="url" alt="">
-        <div class="card__container">
+        <div class="card__container shadow-md">
             <section class="card__container--headline">
                 <h3 class="headline--title">{{ title }}</h3>
                 <span class="headline--price">$ {{ price }}</span>

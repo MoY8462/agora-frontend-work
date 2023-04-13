@@ -3,6 +3,7 @@ const plugin = require('tailwindcss/plugin')
 module.exports = plugin(function ({ addComponents, theme }) {
     addComponents({
         ".card": {
+            paddingBottom: '36px',
             ".card__img": {
                 borderRadius: '8px 8px 0px 0px',
                 width: '100%',

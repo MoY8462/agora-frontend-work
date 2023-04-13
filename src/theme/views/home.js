@@ -4,6 +4,13 @@ module.exports = plugin(function ({ addComponents, theme }) {
     addComponents({
         ".home": {
             padding: '0px 156px',
+            ".home__search": {
+                maxWidth: '384px',
+                margin: '36px 0',
+                'label': {
+                    width:'100%'
+                }
+            },
             ".home__list": {
                 display: 'grid',
                 gridTemplateColumns: 'repeat(1, minmax(0, 1fr))',

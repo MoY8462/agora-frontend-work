@@ -1,5 +1,5 @@
 <script setup>
-const className = `w-full px-3 py-2 min-w-max
+const className = `w-full min-w-max
                 flex justify-center gap-3 items-center
                 text-white-default font-bold 
                 rounded`;
