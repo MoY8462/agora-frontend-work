@@ -46,6 +46,7 @@ export default {
     require("./src/theme/components/input.js"),
     require("./src/theme/components/navbar.js"),
     require("./src/theme/views/home.js"),
+    require("./src/theme/views/login.js"),
   ],
 }
 

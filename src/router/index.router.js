@@ -5,12 +5,17 @@ const router = createRouter({
     routes: [
         {
             path: "/:catchAll(.*)",
-            redirect: { name: "Error" },
+            redirect: { name: "Home" },
         },
         {
             path: '/',
             name: 'Home',
-            component: () => import('../components/views/Home.vue'),
+            component: () => import('../views/Home.vue'),
+        },
+        {
+            path: '/login',
+            name: 'Login',
+            component: () => import('../views/Login.vue'),
         },
     ]
 })

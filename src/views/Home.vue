@@ -1,7 +1,7 @@
 <script setup>
-import Card from '../container/Card.vue'
-import Navbar from '../container/Navbar.vue';
-import Input from '../base/Input.vue';
+import Card from '../components/container/Card.vue'
+import Navbar from '../components/container/Navbar.vue';
+import Input from '../components/base/Input.vue';
 </script>
 
 <template>
