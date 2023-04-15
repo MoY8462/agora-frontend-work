@@ -1,7 +1,7 @@
 <script setup>
 import { computed } from 'vue'
 
-const props = defineProps(['modelValue', 'title', 'placeholder'])
+const props = defineProps(['modelValue', 'title', 'placeholder', 'type'])
 const emit = defineEmits(['update:modelValue'])
 
 const value = computed({
@@ -17,7 +17,7 @@ const value = computed({
 <template>
     <label class="field">
         <span class="field__title">{{ title }}</span>
-        <input class="field__input" v-model="value" :placeholder="placeholder"/>
+        <input :type="type" class="field__input" v-model="value" :placeholder="placeholder"/>
     </label>
   
 </template>
